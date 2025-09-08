@@ -1,0 +1,39 @@
+#home {
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #222;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1 {
+            font-size: 4rem;
+            animation: fadeIn 3s ease-in-out, colorChange 5s infinite alternate;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: #ff6347; /* Tomato */
+            }
+            50% {
+                color: #00bfff; /* Deep Sky Blue */
+            }
+            100% {
+                color: #8835d6ff; /* Lime Green */
+            }
+        }
+}
